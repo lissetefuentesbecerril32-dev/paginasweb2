@@ -1,0 +1,149 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cv-container {
+    width: 800px; /* Tamaño estándar A4 aprox */
+    min-height: 1000px;
+    background-color: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Columna Izquierda */
+.sidebar {
+    width: 35%;
+    background-color: #e5d9e8; /* Color lila claro de fondo */
+    padding: 40px 20px;
+    color: #4a1d4a;
+    z-index: 1;
+}
+
+.profile-img-container {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 15px solid #633366; /* Borde morado oscuro */
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    left: -20px; /* Desfase visual como en la imagen */
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li, .sidebar p {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.sidebar-content i {
+    color: #633366;
+}
+
+/* Columna Derecha */
+.main-content {
+    width: 65%;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    color: #4a1d4a;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #633366;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h3 {
+    border-bottom: none;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-me p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h4 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #8a628a;
+}
+
+.date {
+    font-size: 0.85rem;
+}
+
+/* Decoraciones Abstractas */
+.decoration-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    opacity: 0.6;
+}
+
+.decoration-right {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    width: 150px;
+    z-index: 0;
+}
