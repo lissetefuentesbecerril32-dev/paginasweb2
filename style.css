@@ -147,3 +147,43 @@ section h3 {
     width: 150px;
     z-index: 0;
 }
+/* --- Ajustes para Móvil --- */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column; /* Cambia de filas a columnas */
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .sidebar {
+        width: 100%; /* El sidebar ocupa todo el ancho */
+        padding: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .profile-img-container {
+        width: 150px; /* Reducimos un poco la foto en móvil */
+        height: 150px;
+        margin: 0 auto 20px auto; /* Centramos la foto */
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .header h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Ocultar o ajustar decoraciones para que no tapen el texto */
+    .decoration-bottom-left, 
+    .decoration-right {
+        display: none; 
+    }
+}
