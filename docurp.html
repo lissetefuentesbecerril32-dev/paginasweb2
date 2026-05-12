@@ -3,131 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Constancia de CURP - Lissete Fuentes</title>
+    <title>Visualizador de Constancia CURP</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
             display: flex;
             justify-content: center;
-            padding: 20px;
-        }
-        .curp-container {
-            background-color: #fff;
-            width: 100%;
-            max-width: 800px;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 40px;
-        }
-        .header {
-            border-bottom: 2px solid #b38e5d;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
             align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
-        .header h1 {
-            font-size: 18px;
-            color: #616161;
-            margin: 0;
-            text-transform: uppercase;
+
+        .container {
+            max-width: 1000px; /* Ajusta según prefieras el tamaño máximo */
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
         }
-        .data-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .data-box {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 4px;
-        }
-        .label {
-            font-size: 12px;
-            color: #757575;
-            font-weight: bold;
+
+        img {
+            width: 100%;    /* Ocupa el ancho del contenedor */
+            height: auto;   /* Mantiene la proporción para que no se estire */
             display: block;
-            margin-bottom: 5px;
-        }
-        .value {
-            font-size: 16px;
-            color: #212121;
-            font-weight: bold;
-        }
-        .curp-highlight {
-            font-size: 24px;
-            letter-spacing: 2px;
-            color: #13322b;
-        }
-        .footer-note {
-            margin-top: 30px;
-            font-size: 11px;
-            color: #9e9e9e;
-            text-align: justify;
-            border-top: 1px solid #eee;
-            padding-top: 10px;
-        }
-        .watermark {
-            color: #285c4d;
-            font-weight: bold;
-            font-size: 14px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
 
-<div class="curp-container">
-    <div class="header">
-        <div>
-            <h1>Estados Unidos Mexicanos</h1>
-            <p style="margin: 5px 0; font-size: 14px;">Constancia de la Clave Única de Registro de Población</p>
-        </div>
-        <div class="watermark">GOBIERNO DE MÉXICO</div>
+    <div class="container">
+        <!-- Referencia al archivo solicitado -->
+        <img src="image_8d633f.jpg" alt="Constancia de la Clave Única de Registro de Población">
     </div>
-
-    <div class="data-box" style="text-align: center; margin-bottom: 20px; border-left: 5px solid #285c4d;">
-        <span class="label">CLAVE ÚNICA DE REGISTRO DE POBLACIÓN</span>
-        <span class="value curp-highlight">FUBL080220MMCNCSA4</span>
-    </div>
-
-    <div class="data-section">
-        <div class="data-box">
-            <span class="label">NOMBRE(S)</span>
-            <span class="value">LISSETE</span>
-        </div>
-        <div class="data-box">
-            <span class="label">PRIMER APELLIDO</span>
-            <span class="value">FUENTES</span>
-        </div>
-        <div class="data-box">
-            <span class="label">SEGUNDO APELLIDO</span>
-            <span class="value">BECERRIL</span>
-        </div>
-        <div class="data-box">
-            <span class="label">ENTIDAD DE REGISTRO</span>
-            <span class="value">MÉXICO</span>
-        </div>
-    </div>
-
-    <div class="data-section" style="grid-template-columns: 1fr;">
-        <div class="data-box">
-            <span class="label">DATOS DEL DOCUMENTO PROBATORIO</span>
-            <p style="margin: 0; font-size: 14px;">
-                <b>Año de registro:</b> 2008 &nbsp;&nbsp; 
-                <b>Número de acta:</b> 00180 &nbsp;&nbsp; 
-                <b>Entidad:</b> 15 MÉXICO
-            </p>
-        </div>
-    </div>
-
-    <div class="footer-note">
-        <p>CURP Certificada: verificada con el Registro Civil. Esta constancia es válida y debe ser aceptada para realizar todo trámite de acuerdo a la Secretaría de Gobernación.</p>
-        <p style="text-align: right;">Fecha de emisión: 12 de mayo de 2026</p>
-    </div>
-</div>
 
 </body>
 </html>
